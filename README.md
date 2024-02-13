@@ -17,7 +17,7 @@ whether it's running Debian, Ubuntu, Fedora, or CentOS.
 
 - How to run:
 
-  wget https://raw.githubusercontent.com/bartslinuxtutorials/samp-linux-server-installer/master/samp --no-check-certificate
+  wget https://raw.githubusercontent.com/wolfiktk1991/samp-linux-server-installer/wolfiktk1991-patch-1/samp --no-check-certificate
 
   chmod +x samp
 
