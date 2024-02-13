@@ -17,7 +17,7 @@ if [ -d ~/.samp ]; then
       done
     else
       echo -e "\033[32m   Server has been started.\033[37m"
-      cd ~/.samp/samp03
+      cd ~/home/samp03
       ./samp03svr >/dev/null 2>&1 &
     fi
   exit
@@ -78,11 +78,11 @@ fi
 echo -e "\033[32m   Done!"
 echo -e "\033[37m"
 echo -e " * Creating install directory.. "
-mkdir ~/.samp
+mkdir ~/home
 echo -e "\033[32m   Done!"
 echo -e "\033[37m"
 echo -e " * Downloading SA-MP Server.. "
-cd ~/.samp
+cd ~/home
 wget -q 'https://carolinemt2.eu/samp03xsvr_R1-2.tar.gz'
 echo -e "\033[32m   Done!"
 echo -e "\033[37m"
@@ -94,8 +94,8 @@ echo -e "\033[37m"
 echo -e " * Starting server for the first time.. "
 echo -e "   \033[31mNOTE: YOUR RCON PASSWORD IS: $randomRCON"
 echo -e "\033[37m"
-sed -i "s/changeme/$randomRCON/g" ~/.samp/samp03/server.cfg
-cd ~/.samp/samp03
+sed -i "s/changeme/$randomRCON/g" ~/home/samp03/server.cfg
+cd ~/home/samp03
 ./samp03svr >/dev/null 2>&1 &
 echo -e "\033[32m   Done!"
 echo -e "\033[37m"
